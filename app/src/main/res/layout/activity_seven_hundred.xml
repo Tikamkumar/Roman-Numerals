@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SevenHundred">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.RomanNumbers.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:popupTheme="@style/Theme.RomanNumbers.PopupOverlay">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/back"
+                    android:src="@drawable/backspace" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/purple_200"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:textColor="@color/black"
+                    android:text="@string/app_name"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:ignore="InefficientWeight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/sixty_one"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_601_to_610"
+                android:src="@drawable/img_70" />
+
+            <ImageButton
+                android:id="@+id/sixty_two"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_611_to_620"
+                android:src="@drawable/img_71" />
+
+            <ImageButton
+                android:id="@+id/sixty_three"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_621_to_630"
+                android:src="@drawable/img_72" />
+
+            <ImageButton
+                android:id="@+id/sixty_four"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_631_to_640"
+                android:src="@drawable/img_73" />
+
+            <ImageButton
+                android:id="@+id/sixty_five"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_641_to_650"
+                android:src="@drawable/img_74" />
+
+            <ImageButton
+                android:id="@+id/sixty_six"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_651_to_660"
+                android:src="@drawable/img_75" />
+
+            <ImageButton
+                android:id="@+id/sixty_seven"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_661_to_670"
+                android:src="@drawable/img_76" />
+
+            <ImageButton
+                android:id="@+id/sixty_eight"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_671_to_680"
+                android:src="@drawable/img_77" />
+
+            <ImageButton
+                android:id="@+id/sixty_nine"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_681_to_690"
+                android:src="@drawable/img_78" />
+
+            <ImageButton
+                android:id="@+id/seventy"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_691_to_700"
+                android:src="@drawable/img_79" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e2e2e2" />
+
+</LinearLayout>

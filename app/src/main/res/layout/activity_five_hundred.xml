@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FiveHundred">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.RomanNumbers.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:popupTheme="@style/Theme.RomanNumbers.PopupOverlay">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/back"
+                    android:src="@drawable/backspace" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/purple_200"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:textColor="@color/black"
+                    android:text="@string/app_name"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:ignore="InefficientWeight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/forty_one"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_401_to_410"
+                android:src="@drawable/img_50" />
+
+            <ImageButton
+                android:id="@+id/forty_two"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_411_to_420"
+                android:src="@drawable/img_51" />
+
+            <ImageButton
+                android:id="@+id/forty_three"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_421_to_430"
+                android:src="@drawable/img_52" />
+
+            <ImageButton
+                android:id="@+id/forty_four"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_431_to_440"
+                android:src="@drawable/img_53" />
+
+            <ImageButton
+                android:id="@+id/forty_five"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_441_to_450"
+                android:src="@drawable/img_54" />
+
+            <ImageButton
+                android:id="@+id/forty_six"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_451_to_460"
+                android:src="@drawable/img_55" />
+
+            <ImageButton
+                android:id="@+id/forty_seven"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_461_to_470"
+                android:src="@drawable/img_56" />
+
+            <ImageButton
+                android:id="@+id/forty_eight"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_471_to_480"
+                android:src="@drawable/img_57" />
+
+            <ImageButton
+                android:id="@+id/forty_nine"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_481_to_490"
+                android:src="@drawable/img_58" />
+
+            <ImageButton
+                android:id="@+id/fifty"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_491_to_500"
+                android:src="@drawable/img_59" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e2e2e2" />
+
+</LinearLayout>

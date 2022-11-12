@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    tools:context=".Blackboard">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/back"
+            android:src="@drawable/backspace" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:shadowColor="@color/purple_200"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFDE7">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@color/black"
+            android:contentDescription="@string/blackboard"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/heading_background"
+            android:src="@drawable/img101" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:fontFamily="serif-monospace"
+            android:shadowColor="#FFFDE7"
+            android:shadowDx="2"
+            android:shadowRadius="2"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/NumMath"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="monospace"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.5"
+                android:shadowColor="@color/white"
+                android:shadowDx="1"
+                android:shadowRadius="1"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/equal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:fontFamily="monospace"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.5"
+                android:shadowColor="@color/white"
+                android:shadowDx="1"
+                android:shadowRadius="1"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/RomNm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:fontFamily="monospace"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.5"
+                android:shadowColor="@color/white"
+                android:shadowDx="1"
+                android:shadowRadius="1"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:contentDescription="@string/table"
+            android:scaleType="center"
+            app:srcCompat="@drawable/img_110" />
+
+        <ImageView
+            android:id="@+id/allclear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="220dp"
+            android:layout_marginBottom="17dp"
+            android:contentDescription="@string/duster"
+            android:scaleType="center"
+            app:srcCompat="@drawable/img111" />
+
+        <ImageView
+            android:id="@+id/chock"
+            android:layout_width="50dp"
+            android:layout_height="21dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="80dp"
+            android:layout_marginBottom="13dp"
+            android:contentDescription="@string/chock"
+            android:scaleType="center"
+            app:srcCompat="@drawable/img_112" />
+
+    </FrameLayout>
+
+</LinearLayout>

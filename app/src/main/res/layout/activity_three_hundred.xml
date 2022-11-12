@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThreeHundred">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.RomanNumbers.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:popupTheme="@style/Theme.RomanNumbers.PopupOverlay">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/back"
+                    android:src="@drawable/backspace" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/purple_200"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:textColor="@color/black"
+                    android:text="@string/app_name"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:ignore="InefficientWeight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/twenty_one"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_201_to_210"
+                android:src="@drawable/img_30" />
+
+            <ImageButton
+                android:id="@+id/twenty_two"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_211_to_220"
+                android:src="@drawable/img_31" />
+
+            <ImageButton
+                android:id="@+id/twenty_three"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_221_to_230"
+                android:src="@drawable/img_32" />
+
+            <ImageButton
+                android:id="@+id/twenty_four"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_231_to_240"
+                android:src="@drawable/img_33" />
+
+            <ImageButton
+                android:id="@+id/twenty_five"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_241_to_250"
+                android:src="@drawable/img_34" />
+
+            <ImageButton
+                android:id="@+id/twenty_six"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_251_to_260"
+                android:src="@drawable/img_35" />
+
+            <ImageButton
+                android:id="@+id/twenty_seven"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_261_to_270"
+                android:src="@drawable/img_36" />
+
+            <ImageButton
+                android:id="@+id/twenty_eight"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_271_to_280"
+                android:src="@drawable/img_37" />
+
+            <ImageButton
+                android:id="@+id/twenty_nine"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_281_to_290"
+                android:src="@drawable/img_38" />
+
+            <ImageButton
+                android:id="@+id/thirty"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:contentDescription="@string/range_291_to_300"
+                android:src="@drawable/img_39" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e2e2e2" />
+
+</LinearLayout>
